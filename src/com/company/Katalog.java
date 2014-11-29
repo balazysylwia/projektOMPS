@@ -8,3 +8,5 @@ public class Katalog {
     public void WybierzListe(){}
 
 }
+
+//patrz, jaki komentarz :D
