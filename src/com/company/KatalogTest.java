@@ -13,7 +13,6 @@ public class KatalogTest extends junit.framework.TestCase {
         katalog1 = new Katalog();
     }
 
-
     protected void tearDown() {
 
     }
