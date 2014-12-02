@@ -2,25 +2,32 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-//import java.util.Scanner;
+import java.io.File;
+import java.util.Scanner;
 
 /**
  * Created by Sylwia on 2014-11-23.
  */
 public class Lista {
     List<Produkt> lista = new ArrayList<Produkt>();
-    //Scanner input = new Scanner(System.in);
 
-    /*private String NazwaListy;
-    public void setNazwaListy(String NazwaListy){
+    private String NazwaListy;
+    /*public void setNazwaListy(String NazwaListy){
         this.NazwaListy = NazwaListy;
     }
     public String getNazwaListy(){
         return NazwaListy;
     }*/
 
-    public void StworzListe(){}
-    public void DodajProdukt(String NazwaProduktu){
+    public void StworzListe(){
+        Scanner nazwa = new Scanner(System.in);
+        NazwaListy = nazwa.nextLine();
+        File ListaTxt = new File(NazwaListy + ".txt");
+    }
+    public void DodajProdukt(){
+        String NazwaProduktu;
+        Scanner nazwa = new Scanner(System.in);
+        NazwaProduktu = nazwa.nextLine();
         lista.add(new Produkt(NazwaProduktu));
     }
     public void UsunProdukt(String NazwaProduktu){
