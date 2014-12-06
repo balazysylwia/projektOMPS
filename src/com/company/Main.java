@@ -1,7 +1,5 @@
 package com.company;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void main(String[] args) throws IOException {
         /*Produkt nowy = new Produkt("name");
         System.out.println(nowy.getNazwa());
 
@@ -27,9 +25,16 @@ public class Main {
         nowaLista.DodajProdukt("banazwa2");
         nowaLista.DodajProdukt("cnazwa2");
         nowaLista.DodajProdukt("aaanazwa2");
+        nowaLista.StworzListe();
 
-        nowaLista.StworzListe("ompsik");
+        //nowaLista.StworzListe("ompsik");
         //System.out.println(nowaLista.Rozmiar());
+        //nowaLista.CzytajListe("ompsik");
+
+        nowaLista.UsunListeZDysku("nowa nazwa listy");
+
+
+
 
 
 
