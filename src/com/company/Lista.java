@@ -22,18 +22,6 @@ public class Lista {
     }
     public Lista (){} // przez te testy trzeba dodać takie coś. o co cho?
 
-    // StworzListe zapisuje wygenerowaną listę do pliku txt
-    public void StworzListe() throws FileNotFoundException, UnsupportedEncodingException {
-        // //zapisywanie w konkretnym folderze:
-        //PrintWriter ListaTxt = new PrintWriter(new OutputStreamWriter(new FileOutputStream("C:/Users/Sylwia/IdeaProjects/projektOMPS/src/com/company/Katalog/"+ NazwaListy+".txt"), "UTF-8"));
-        PrintWriter ListaTxt = new PrintWriter(NazwaListy+".txt", "UTF-8");
-        for(Produkt a: lista) {
-            ListaTxt.println(a.getNazwa());
-        }
-        int rozmiar = lista.size();
-        //ListaTxt.println("Na Twojej liscie znajduje sie "+ rozmiar + " produktow.");
-        ListaTxt.close();
-    } // dziala
 
     // DodajProdukt dodaje do naszej listy wpisany przez nas do konsoli produkt
     public void DodajProdukt(){
@@ -77,25 +65,16 @@ public class Lista {
         Collections.sort(lista);
     } // dziala
 
-
-
-    //ZMIENIC KLASE NASTEPUJACYCH METOD:
-
-    //UsunListeZDysku usuwa liste zapisana na dysku
-    public void UsunListeZDysku (String NazwaListy){
-        File file = new File(NazwaListy+".txt");
-        file.delete();
-    } // dziala
-
-    //CzytajListe otwiera liste zapisana w folderze, w ktorym znajduje sie projekt
-    public void CzytajListe(String NazwaListy) throws IOException {
-        BufferedReader odczyt = new BufferedReader(new FileReader(NazwaListy+".txt"));
-        String line;
-        while ((line = odczyt.readLine()) != null) {
-            System.out.println(line);
+    // StworzListe zapisuje wygenerowaną listę do pliku txt
+    public void StworzListe() throws FileNotFoundException, UnsupportedEncodingException {
+        // //zapisywanie w konkretnym folderze:
+        PrintWriter ListaTxt = new PrintWriter(new OutputStreamWriter(new FileOutputStream("Katalog/"+ NazwaListy+".txt"), "UTF-8"));
+        //PrintWriter ListaTxt = new PrintWriter(NazwaListy+".txt", "UTF-8");
+        for(Produkt a: lista) {
+            ListaTxt.println(a.getNazwa());
         }
-        odczyt.close();
+        int rozmiar = lista.size();
+        //ListaTxt.println("Na Twojej liscie znajduje sie "+ rozmiar + " produktow.");
+        ListaTxt.close();
     } // dziala
-
-
-}
+    }
