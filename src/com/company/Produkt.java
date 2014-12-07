@@ -11,7 +11,7 @@ public class Produkt implements Comparable <Produkt>{
     public String getNazwa(){
         return Nazwa;
     }
-    public Produkt (){} // przez te testy trzeba dodać takie coś. o co cho?
+    public Produkt (){}
     public Produkt (String Nazwa){
         this.Nazwa = Nazwa;
     }
