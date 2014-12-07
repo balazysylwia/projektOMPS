@@ -20,7 +20,7 @@ public class Lista {
     public Lista (String NazwaListy){
         this.NazwaListy = NazwaListy;
     }
-    public Lista (){} // przez te testy trzeba dodać takie coś. o co cho?
+    public Lista (){} 
 
 
     // DodajProdukt dodaje do naszej listy wpisany przez nas do konsoli produkt
