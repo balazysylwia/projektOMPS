@@ -46,8 +46,7 @@ public class Katalog {
         Scanner nazwa = new Scanner(System.in);
         NazwaListy = nazwa.nextLine();
         return NazwaListy;
-    }
+    } // dziala
 
 }
 
-//patrz, jaki komentarz :D
