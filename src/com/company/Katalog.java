@@ -16,10 +16,10 @@ public class Katalog {
     }
 
     //UsunListeZDysku usuwa liste zapisana na dysku
-    public void UsunListeZDysku (String NazwaListy){
+    /*public void UsunListeZDysku (String NazwaListy){
         File file = new File("Katalog/"+NazwaListy);
         file.delete();
-    } // dziala
+    } */// dziala
 
     //CzytajListe otwiera liste zapisana w folderze, w ktorym znajduje sie projekt
     public void CzytajListe(String NazwaListy) throws IOException {

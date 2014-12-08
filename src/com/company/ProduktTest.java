@@ -11,7 +11,7 @@ public class ProduktTest  extends junit.framework.TestCase {
     public ProduktTest() {}
 
     protected void setUp(){
-        produkt1 = new Produkt();
+        produkt1 = new Produkt("ziemniaki");
     }
 
 
@@ -21,7 +21,7 @@ public class ProduktTest  extends junit.framework.TestCase {
 
 
     public void testSetNazwa() {
-
+        assertEquals("ziemniaki",produkt1.getNazwa());
     }
 
 

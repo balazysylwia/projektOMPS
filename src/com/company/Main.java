@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Produkt nowy = new Produkt("name");
+ /*       Produkt nowy = new Produkt("name");
         System.out.println(nowy.getNazwa());
 
         nowy.setNazwa("new name");
@@ -27,7 +27,7 @@ public class Main {
         Katalog dir = new Katalog();
         String nazwa = dir.WybierzListe();
         dir.CzytajListe(nazwa);
-        dir.UsunListeZDysku(nazwa);
+        dir.UsunListeZDysku(nazwa);*/
 
     }
 }
